@@ -1,0 +1,653 @@
+extends layout
+
+block vars
+	- var title = "FD"
+	- var navigation = "index"
+
+block content
+	.main-display
+		.container
+			h1
+				|ИНТЕРНЕТ МАГАЗИН
+				br 
+				|ФРАНЦУЗСКОГО ДЕКОРА
+				br
+				|И ПОДАРКОВ В УКРАИНЕ
+			.search-block
+				.search-holder
+					input(type="text")
+					a(href="#").search-btn
+						img(src="img/icons/search.svg", alt="")
+				.pages-navigation
+					ul.list-inline
+						li
+							a(href="#") Wishlist
+						li
+							a(href="#") Каталог
+						li.basket
+							a(href="#") Корзина
+							.empty-tooltip
+								span.red В корзине 
+								span 4 товаров на сумму 2090.00 грн.
+			.main-slider-holder
+				.flower-1
+				.flower-2
+				.flower-3
+				.flower-4
+				.main-slider
+					.owl-carousel.owl-1
+						.item
+							.image-holder
+								img(src="img/content/sld-1.png", alt="")
+						.item
+							.image-holder
+								img(src="img/content/sld-2.png", alt="")
+						.item
+							.image-holder
+								img(src="img/content/sld-3.png", alt="")
+						.item
+							.image-holder
+								img(src="img/content/sld-4.png", alt="")
+						.item
+							.image-holder
+								img(src="img/content/sld-5.png", alt="")
+						.item
+							.image-holder
+								img(src="img/content/sld-6.png", alt="")
+				.slider-label
+					span ДОМАШНИЙ УЮТ И СЕМЕЙНЫЕ ЦЕННОСТИ
+
+	.categories
+		.container
+			h2.bordered
+				span Категории товаров
+			ul.main-list.inline-layout.col-3
+				li.cat-item
+					.image-holder
+						img(src="img/content/cat-1.jpg", alt="")
+					.cat-list-holder
+						.cat-list
+							p Для дома и интерьера
+							ul.inline-layout.col-3
+								li.list-item
+									h5 Уютная обстановка
+									ul.sub-list
+										li
+											a(href="#") прихожая
+										li
+											a(href="#") ватная комната
+										li
+											a(href="#") корзины и коробка
+										li
+											a(href="#") декорации
+										li
+											a(href="#") вазы и кашпо
+								li.list-item
+									h5 Ароматы
+									ul.sub-list
+										li
+											a(href="#") Дифузоры и аромапалочки
+										li
+											a(href="#") аромат для дома
+										li
+											a(href="#") свечи
+								li.list-item
+									h5 Декор стен и фоторамки
+									ul.sub-list
+										li
+											a(href="#") Вешалки и крючки
+										li
+											a(href="#") картины и таблички
+										li
+											a(href="#") фоторамки
+										li
+											a(href="#") зеркала
+								li.list-item
+									h5 Часы
+									ul.sub-list
+										li
+											a(href="#") комнатные часы
+										li
+											a(href="#") часы настенные
+								li.list-item
+									h5 Освещение
+									ul.sub-list
+										li
+											a(href="#") светильники
+										li
+											a(href="#") абажуры
+										li
+											a(href="#") подсвечники
+					p Для дома и интерьера
+
+					
+									
+				li.cat-item.center
+					.image-holder
+						img(src="img/content/cat-2.jpg", alt="")
+					.cat-list-holder
+						.cat-list
+							p Для дома и интерьера
+							ul.inline-layout.col-3
+								li.list-item
+									h5 Уютная обстановка
+									ul.sub-list
+										li
+											a(href="#") прихожая
+										li
+											a(href="#") ватная комната
+										li
+											a(href="#") корзины и коробка
+										li
+											a(href="#") декорации
+										li
+											a(href="#") вазы и кашпо
+								li.list-item
+									h5 Ароматы
+									ul.sub-list
+										li
+											a(href="#") Дифузоры и аромапалочки
+										li
+											a(href="#") аромат для дома
+										li
+											a(href="#") свечи
+								li.list-item
+									h5 Декор стен и фоторамки
+									ul.sub-list
+										li
+											a(href="#") Вешалки и крючки
+										li
+											a(href="#") картины и таблички
+										li
+											a(href="#") фоторамки
+										li
+											a(href="#") зеркала
+								li.list-item
+									h5 Часы
+									ul.sub-list
+										li
+											a(href="#") комнатные часы
+										li
+											a(href="#") часы настенные
+								li.list-item
+									h5 Освещение
+									ul.sub-list
+										li
+											a(href="#") светильники
+										li
+											a(href="#") абажуры
+										li
+											a(href="#") подсвечники
+					p Мебель
+				li.cat-item.last
+					.image-holder
+						img(src="img/content/cat-3.jpg", alt="")
+					.cat-list-holder
+						.cat-list
+							p Для дома и интерьера
+							ul.inline-layout.col-3
+								li.list-item
+									h5 Уютная обстановка
+									ul.sub-list
+										li
+											a(href="#") прихожая
+										li
+											a(href="#") ватная комната
+										li
+											a(href="#") корзины и коробка
+										li
+											a(href="#") декорации
+										li
+											a(href="#") вазы и кашпо
+								li.list-item
+									h5 Ароматы
+									ul.sub-list
+										li
+											a(href="#") Дифузоры и аромапалочки
+										li
+											a(href="#") аромат для дома
+										li
+											a(href="#") свечи
+								li.list-item
+									h5 Декор стен и фоторамки
+									ul.sub-list
+										li
+											a(href="#") Вешалки и крючки
+										li
+											a(href="#") картины и таблички
+										li
+											a(href="#") фоторамки
+										li
+											a(href="#") зеркала
+								li.list-item
+									h5 Часы
+									ul.sub-list
+										li
+											a(href="#") комнатные часы
+										li
+											a(href="#") часы настенные
+								li.list-item
+									h5 Освещение
+									ul.sub-list
+										li
+											a(href="#") светильники
+										li
+											a(href="#") абажуры
+										li
+											a(href="#") подсвечники
+					p Мелочи и подарки
+				li.cat-item
+					.image-holder
+						img(src="img/content/cat-4.jpg", alt="")
+					.cat-list-holder
+						.cat-list
+							p Для дома и интерьера
+							ul.inline-layout.col-3
+								li.list-item
+									h5 Уютная обстановка
+									ul.sub-list
+										li
+											a(href="#") прихожая
+										li
+											a(href="#") ватная комната
+										li
+											a(href="#") корзины и коробка
+										li
+											a(href="#") декорации
+										li
+											a(href="#") вазы и кашпо
+								li.list-item
+									h5 Ароматы
+									ul.sub-list
+										li
+											a(href="#") Дифузоры и аромапалочки
+										li
+											a(href="#") аромат для дома
+										li
+											a(href="#") свечи
+								li.list-item
+									h5 Декор стен и фоторамки
+									ul.sub-list
+										li
+											a(href="#") Вешалки и крючки
+										li
+											a(href="#") картины и таблички
+										li
+											a(href="#") фоторамки
+										li
+											a(href="#") зеркала
+								li.list-item
+									h5 Часы
+									ul.sub-list
+										li
+											a(href="#") комнатные часы
+										li
+											a(href="#") часы настенные
+								li.list-item
+									h5 Освещение
+									ul.sub-list
+										li
+											a(href="#") светильники
+										li
+											a(href="#") абажуры
+										li
+											a(href="#") подсвечники
+					p Кухня и еда
+				li.cat-item.center
+					.image-holder
+						img(src="img/content/cat-5.jpg", alt="")
+					.cat-list-holder
+						.cat-list
+							p Для дома и интерьера
+							ul.inline-layout.col-3
+								li.list-item
+									h5 Уютная обстановка
+									ul.sub-list
+										li
+											a(href="#") прихожая
+										li
+											a(href="#") ватная комната
+										li
+											a(href="#") корзины и коробка
+										li
+											a(href="#") декорации
+										li
+											a(href="#") вазы и кашпо
+								li.list-item
+									h5 Ароматы
+									ul.sub-list
+										li
+											a(href="#") Дифузоры и аромапалочки
+										li
+											a(href="#") аромат для дома
+										li
+											a(href="#") свечи
+								li.list-item
+									h5 Декор стен и фоторамки
+									ul.sub-list
+										li
+											a(href="#") Вешалки и крючки
+										li
+											a(href="#") картины и таблички
+										li
+											a(href="#") фоторамки
+										li
+											a(href="#") зеркала
+								li.list-item
+									h5 Часы
+									ul.sub-list
+										li
+											a(href="#") комнатные часы
+										li
+											a(href="#") часы настенные
+								li.list-item
+									h5 Освещение
+									ul.sub-list
+										li
+											a(href="#") светильники
+										li
+											a(href="#") абажуры
+										li
+											a(href="#") подсвечники
+					p Интерьеры и коллекции
+				li.cat-item.last
+					.image-holder
+						img(src="img/content/cat-6.jpg", alt="")
+					.cat-list-holder
+						.cat-list
+							p Для дома и интерьера
+							ul.inline-layout.col-3
+								li.list-item
+									h5 Уютная обстановка
+									ul.sub-list
+										li
+											a(href="#") прихожая
+										li
+											a(href="#") ватная комната
+										li
+											a(href="#") корзины и коробка
+										li
+											a(href="#") декорации
+										li
+											a(href="#") вазы и кашпо
+								li.list-item
+									h5 Ароматы
+									ul.sub-list
+										li
+											a(href="#") Дифузоры и аромапалочки
+										li
+											a(href="#") аромат для дома
+										li
+											a(href="#") свечи
+								li.list-item
+									h5 Декор стен и фоторамки
+									ul.sub-list
+										li
+											a(href="#") Вешалки и крючки
+										li
+											a(href="#") картины и таблички
+										li
+											a(href="#") фоторамки
+										li
+											a(href="#") зеркала
+								li.list-item
+									h5 Часы
+									ul.sub-list
+										li
+											a(href="#") комнатные часы
+										li
+											a(href="#") часы настенные
+								li.list-item
+									h5 Освещение
+									ul.sub-list
+										li
+											a(href="#") светильники
+										li
+											a(href="#") абажуры
+										li
+											a(href="#") подсвечники
+					p Текстиль
+	.get-all
+		.container
+			form(action="")
+				h2.bordered.red
+					span Получить весь каталог товаров
+				.mail-input
+						input(type="text", placeholder="Введите ваш e-mail")
+						button.search-btn.button получить
+
+	.m-slider
+		.container
+			h2.bordered
+				span Товары недели
+			.goods-slider
+				.owl-carousel.owl-2
+					.item
+						.flip-container
+							.front
+								.label new
+								.image-holder
+									img(src="img/content/gd-1.jpg", alt="")
+							.back
+								a(href="#").button подробнее
+								.btn-holder
+									a(href="#") Купить
+									a(href="#") В WISHLIST
+								span.art Артикул: 611400
+
+						p.text
+							|Жидкое мыло "Женьшень-лимон"
+						p.price 415.00 грн
+						a(href="#").button Купить в 1 клик
+					.item
+						.flip-container
+							.front
+								.image-holder
+									img(src="img/content/gd-1.jpg", alt="")
+							.back
+								a(href="#").button подробнее
+								.btn-holder
+									a(href="#") Купить
+									a(href="#") В WISHLIST
+								span.art Артикул: 611400
+
+						p.text
+							|Жидкое мыло "Женьшень-лимон"
+						p.price 415.00 грн
+						a(href="#").button Купить в 1 клик
+					.item
+						.flip-container
+							.front
+								.image-holder
+									img(src="img/content/gd-1.jpg", alt="")
+							.back
+								a(href="#").button подробнее
+								.btn-holder
+									a(href="#") Купить
+									a(href="#") В WISHLIST
+								span.art Артикул: 611400
+
+						p.text
+							|Жидкое мыло "Женьшень-лимон"
+						p.price 415.00 грн
+						a(href="#").button Купить в 1 клик
+					.item
+						.flip-container
+							.front
+								.image-holder
+									img(src="img/content/gd-1.jpg", alt="")
+							.back
+								a(href="#").button подробнее
+								.btn-holder
+									a(href="#") Купить
+									a(href="#") В WISHLIST
+								span.art Артикул: 611400
+
+						p.text
+							|Жидкое мыло "Женьшень-лимон"
+						p.price 415.00 грн
+						a(href="#").button Купить в 1 клик
+					.item
+						.flip-container
+							.front
+								.image-holder
+									img(src="img/content/gd-1.jpg", alt="")
+							.back
+								a(href="#").button подробнее
+								.btn-holder
+									a(href="#") Купить
+									a(href="#") В WISHLIST
+								span.art Артикул: 611400
+
+						p.text
+							|Жидкое мыло "Женьшень-лимон"
+						p.price 415.00 грн
+						a(href="#").button Купить в 1 клик
+
+	.get-all
+		.container
+			form(action="")
+				h2.bordered.red
+					span Получить свежие идеи
+				.mail-input
+						input(type="text", placeholder="Введите ваш e-mail")
+						button.search-btn.button подписаться
+
+	.m-slider.colection
+		.container
+			h2.bordered
+				span Коллекции и интерьеры
+			.goods-slider
+				.owl-carousel.owl-2
+					.item
+						.image-holder
+							img(src="img/content/col-1.jpg", alt="")
+						p.text
+							|Жидкое мыло «Женьшень-лимон» Жидкое мыло Жидкое мыло «Женьшень-лимон» Жидкое мыло
+					.item
+						.image-holder
+							img(src="img/content/col-2.jpg", alt="")
+						p.text
+							|Жидкое мыло «Женьшень-лимон» Жидкое мыло Жидкое мыло «Женьшень-лимон» Жидкое мыло
+					.item
+						.image-holder
+							img(src="img/content/col-3.jpg", alt="")
+						p.text
+							|Жидкое мыло «Женьшень-лимон» Жидкое мыло Жидкое мыло «Женьшень-лимон» Жидкое мыло
+					.item
+						.image-holder
+							img(src="img/content/col-4.jpg", alt="")
+						p.text
+							|Жидкое мыло «Женьшень-лимон» Жидкое мыло Жидкое мыло «Женьшень-лимон» Жидкое мыло
+					.item
+						.image-holder
+							img(src="img/content/col-3.jpg", alt="")
+						p.text
+							|Жидкое мыло «Женьшень-лимон» Жидкое мыло Жидкое мыло «Женьшень-лимон» Жидкое мыло
+					.item
+						.image-holder
+							img(src="img/content/col-4.jpg", alt="")
+						p.text
+							|Жидкое мыло «Женьшень-лимон» Жидкое мыло Жидкое мыло «Женьшень-лимон» Жидкое мыло
+
+	.advantages
+		.container
+			ul.ad-list.inline-layout.col-4
+				li
+					.image-holder
+						img(src="img/icons/ico-1.png", alt="")
+					.text-holder
+						h6 Удобство покупки
+						p
+							|Удобная доставка и покупка онлайн или в официальном магазине
+				li
+					.image-holder
+						img(src="img/icons/ico-2.png", alt="")
+					.text-holder
+						h6 Официальное дилерство
+						p
+							|Осуществляем прямые поставки товара из Европы
+				li
+					.image-holder
+						img(src="img/icons/ico-3.png", alt="")
+					.text-holder
+						h6 Всегда в тренде
+						p
+							|Мы идем в ногу с мировыми тенденциями интерьера и декора
+				li
+					.image-holder
+						img(src="img/icons/ico-4.png", alt="")
+					.text-holder
+						h6 Большой опыт
+						p
+							|Работаем на рынке Украины более 15 лет
+
+	.vendors
+		.owl-carousel.owl-3
+			.item
+				a(href="#")
+					.image-holder
+						img(src="img/icons/lg-1.png", alt="")
+			.item
+				a(href="#")
+					.image-holder
+						img(src="img/icons/lg-2.png", alt="")
+			.item
+				a(href="#")
+					.image-holder
+						img(src="img/icons/lg-3.png", alt="")
+			.item
+				a(href="#")
+					.image-holder
+						img(src="img/icons/lg-4.png", alt="")
+			.item
+				a(href="#")
+					.image-holder
+						img(src="img/icons/lg-5.png", alt="")
+
+
+	.about-us
+		.container
+			h2.bordered
+				span О нас
+			.text-holder
+				p
+					|Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+				p
+					|Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus.
+
+				p
+					|Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus.
+				p
+					|Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+				p
+					|Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus.
+
+				p
+					|Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus.
+				p
+					|Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus.
+
+				p
+					|Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus.
+
+
+	.contact-us
+		.container
+			h2.bordered
+				span Обратная связь
+			.form-holder
+				form(action="")
+					.inline-layout.col-2
+						.inputs
+							input(type="text", placeholder="Введите ваше имя")
+							input(type="text", placeholder="Введите номер телефона")
+							input(type="text", placeholder="Введите ваше e-mail")
+						.inputs
+							textarea#ere(placeholder="Введите ваше сообщение")
+					.btn-holder
+						button.button отправить
+
+
+
+

@@ -1,0 +1,1065 @@
+@import _mixins
+
+//----------------------------------
+// DEV
+//----------------------------------
+.chromeperfectpixel-initial-block iframe,
+#chromeperfectpixel-supported-by
+	display: none !important
+#__bs_notify__
+	display: none !important
+	opacity: 0 !important
+
+//----------------------------------
+// END DEV
+//----------------------------------
+
+
+body
+	// &::-webkit-scrollbar
+
+
+//----------------------------------
+// TEST
+//----------------------------------
+section.test-block
+	margin: 100px 0
+//----------------------------------
+// END TEST
+//----------------------------------
+
+
+
+.top-line
+	background: #be2132
+	text-align: right
+	box-shadow: $box-shadow
+	.navigation
+		padding-top: 19px
+		margin-right: 11px
+		padding-bottom: 21px
+		padding-left: 260px
+		@media #{$media-sm-down}
+			padding-left: 190px
+		@media #{$media-xs-down}
+			padding-left: 0
+		@media #{$media-xs-down}
+			text-align: center
+			margin-right: 0
+		.button
+			border: 1px solid transparent
+			&:hover
+				background: transparent
+				border: 1px solid rgba(0, 0, 0, 0.54)
+	.image-holder
+		max-width: 173px
+		margin: 0 auto
+		margin-bottom: 14px
+	.inline-layout > *
+		vertical-align: middle
+	.phone-numbers
+		height: 31px
+		overflow: hidden
+		padding-right: 30px
+		margin-right: 33px
+		color: #fff
+		font-weight: 700
+		font-size: 1.2rem
+		position: relative
+		width: 256px
+		@media #{$media-sm-down}
+			display: block
+			margin-bottom: 20px
+		@media #{$media-md-down}
+			height: 21px
+			width: 217px
+		@media #{$media-sm-only}
+			position: absolute
+			top: 70px
+			right: 320px
+		@media #{$media-xs-down}
+			margin: 30px auto
+		&.open,
+		&:hover
+			overflow: initial
+			.phones-list
+				box-shadow: $box-shadow
+				z-index: 2
+		.phones-list
+			position: absolute
+			top: -14px
+			left: 0
+			width: 100%
+			text-align: left
+			background: #be2132
+			padding: 12px
+			padding-right: 30px
+			z-index: 2
+		&:after
+			content: ''
+			position: absolute
+			top: 7px
+			right: 3px
+			background: url(../img/icons/expand-less.svg) 50% 50% no-repeat
+			height: 18px
+			width: 18px
+			z-index: 4
+			@media #{$media-md-down}
+				top: 3px
+		.black
+			color: #570f16
+			margin-right: 8px
+		.call
+			padding: 6px 21px
+	.nav-list
+		font-family: "Roboto"
+		margin-top: 22px
+		color: #fff
+		@media #{$media-sm-down}
+			display: none
+		&.mobile
+			max-height: 0
+			overflow: hidden
+			margin: 0
+			margin-top: 20px
+			@media #{$media-sm-down}
+				display: block
+			@media #{$media-md-up}
+				display: none
+			li
+				display: block
+				margin-left: 0
+		&.open
+			max-height: 1000px
+		li
+			margin-left: 26px
+			font-weight: 400
+			&:hover
+				text-decoration: underline
+	.login
+		text-transform: uppercase
+		padding: 0 52px
+		font-size: 1.2rem
+		text-decoration: none
+		color: #fff
+		position: relative
+		&:hover
+			text-decoration: underline
+		@media #{$media-xs-down}
+			display: block
+			margin: 20px auto
+			width: 170px
+
+		&:after
+			content: ''
+			position: absolute
+			height: 20px
+			width: 5px
+			top: 7px
+			right: 26px
+			background: url(../img/icons/more-copy.svg) 50% 50% no-repeat
+			@media #{$media-md-down}
+				top: 3px
+		&:before
+			content: ''
+			position: absolute
+			height: 20px
+			width: 5px
+			top: 7px
+			left: 26px
+			background: url(../img/icons/more-copy.svg) 50% 50% no-repeat
+			@media #{$media-md-down}
+				top: 3px
+	.logo
+		width: 242px
+		height: 195px
+		position: absolute
+		top: 1px
+		left: 10px
+		box-shadow: $box-shadow
+		text-align: center
+		background: $main-red
+		color: #fff
+		padding: 12px 20px
+		font-size: 0.75em
+		line-height: 1.4em
+		@media #{$media-sm-down}
+			width: 172px
+			height: 171px
+			top: 0px
+		@media #{$media-xs-down}
+			position: static
+			margin: 0 auto
+
+
+.main-display
+	padding-top: 32px
+	background: url(../img/icons/prytt-bg.svg) 0% -13% no-repeat
+	overflow: hidden
+	padding-bottom: 20px
+	@media #{$media-sm-down}
+		background: url(../img/icons/prytt-bg.svg) 0% -41% no-repeat
+	.flower-1,
+	.flower-2,
+	.flower-3,
+	.flower-4
+		@media #{$media-xs-down}
+			display: none
+	.flower-1
+		position: absolute
+		top: -145px
+		left: -252px
+		background: url(../img/icons/fl-1.svg) 50% 50% no-repeat
+		height: 380px
+		width: 314px
+		background-size: contain
+		z-index: 3
+		@media #{$media-lg-down}
+			top: -98px
+			left: -172px
+			height: 250px
+			width: 244px
+	.flower-2
+		position: absolute
+		top: -232px
+		left: -322px
+		background: url(../img/icons/fl-3.svg) 50% 50% no-repeat
+		height: 880px
+		width: 714px
+		background-size: contain
+		@media #{$media-lg-down}
+			top: -102px
+			left: -132px
+			height: 440px
+			width: 274px
+	.flower-3
+		position: absolute
+		top: -300px
+		right: -268px
+		background: url(../img/icons/fl-4.svg) 50% 50% no-repeat
+		height: 690px
+		width: 654px
+		background-size: contain
+		@media #{$media-lg-down}
+			height: 370px
+			width: 354px
+			top: -160px
+			right: -188px
+	.flower-4
+		position: absolute
+		top: -63px
+		right: -128px
+		background: url(../img/icons/fl-2.svg) 50% 50% no-repeat
+		height: 194px
+		width: 194px
+		background-size: contain
+		z-index: 3
+		@media #{$media-lg-down}
+			top: -53px
+			right: -78px
+			height: 144px
+			width: 144px
+	.main-slider-holder
+		position: relative
+		@media #{$media-lg-down}
+			max-width: 940px
+			margin: 0 auto
+			margin-top: 40px
+		@media #{$media-md-down}
+			max-width: 730px
+	h1
+		font-size: 3.18rem
+		line-height: 1.34em
+		color: $main-red
+		text-align: center
+		margin-bottom: 26px
+		position: relative
+		z-index: 2
+		@media #{$media-xs-down}
+			font-size: 1.8rem
+	.search-block
+		text-align: center
+		.search-holder
+			border: 1px solid #9b9b9b
+			position: relative
+			border-radius: 25px
+			padding: 4px 50px
+			max-width: 619px
+			margin: 0 auto
+			z-index: 4
+			background: #fff
+		input
+			box-shadow: none
+			border: none
+			background: transparent
+			outline: none
+			width: 100%
+		.search-btn
+			position: absolute
+			top: 2px
+			right: 8px
+			width: 35px
+			height: 35px
+	.pages-navigation
+		position: relative
+		z-index: 4
+		ul
+			margin-top: 20px
+			border: 1px solid #9b9b9b
+			display: inline-block
+			border-radius: 25px
+			background: #fff
+		li
+			a
+				display: inline-block
+				padding: 6px 43px
+				border-left: 1px solid #9b9b9b
+				color: #929292
+				font-weight: 700
+				text-transform: uppercase
+				font-size: 1.2rem
+				text-align: center
+				text-decoration: inherit
+				@media #{$media-xs-down}
+					font-size: 0.9rem
+					padding: 6px 7px
+			&:first-child
+				a
+					border: none
+			&.active,
+			&:hover
+				a
+					color: $main-red
+					text-decoration: underline
+			&.basket
+				position: relative
+				z-index: 520
+				&:hover
+					.empty-tooltip
+						opacity: 1
+						top: 45px
+						transition: top .2s, opacity .2s
+				.empty-tooltip
+					position: absolute
+					top: 55px
+					left: 0
+					background: rgba(47, 15, 18, 0.88)
+					color: #fff
+					padding: 10px
+					border-radius: 9px
+					z-index: 330
+					padding: 15px
+					text-align: left
+					opacity: 0
+					transition: top .2s, opacity .2s
+					span
+						white-space: nowrap
+						display: block
+						&.red
+							text-transform: uppercase
+							color: $main-red
+							font-weight: 700
+							margin-bottom: 10px
+					&:after
+						content: ''
+						position: absolute
+						top: -10px
+						left: 30px
+						width: 0
+						height: 0
+						border-style: solid
+						border-width: 0 7.5px 10px 7.5px
+						border-color: transparent transparent rgba(47, 15, 18, 0.88) transparent
+				&:hover
+					background: #570f17
+					border-top-right-radius: 16px
+					border-bottom-right-radius: 16px
+					a
+						color: #fff
+
+	.main-slider
+		margin-top: 40px
+		padding: 19px
+		background: #fff
+		box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.5)
+		position: relative
+		z-index: 2
+		.image-holder
+			height: 527px
+			@media #{$media-lg-down}
+				height: 407px
+			@media #{$media-md-down}
+				height: 367px
+		.owl-nav
+			position: absolute
+			top: 50%
+			transform: translateY(-50%)
+			width: 100%
+			height: 65px
+			@media #{$media-lg-down}
+				height: 44px
+			.owl-prev,
+			.owl-next
+				position: absolute
+				height: 61px
+				width: 61px
+				background: red
+				border-radius: 50%
+				text-indent: -9999px
+				box-shadow: $box-shadow
+				@media #{$media-lg-down}
+					height: 44px
+					width: 44px
+					background-size: 16px !important
+				@media #{$media-xs-down}
+					display: none
+				&.disabled
+					opacity: 0
+					pointer-events: none
+			.owl-prev
+				left: 20px
+				background: url(../img/icons/chevron-left.svg) 43% 50% no-repeat rgba(255, 255, 255, 0.81)
+			.owl-next
+				right: 20px
+				background: url(../img/icons/chevron-right.svg) 57% 50% no-repeat rgba(255, 255, 255, 0.81)
+		.owl-dots
+			position: absolute
+			bottom: 15px
+			left: 50%
+			transform: translateX(-50%)
+			width: 100%
+			text-align: center
+			.owl-dot
+				display: inline-block
+				height: 32px
+				width: 32px
+				background: rgba(255, 255, 255, 0.81)
+				border-radius: 50%
+				margin: 0 5px
+				vertical-align: top
+				padding: 5px
+				span
+					vertical-align: top
+				@media #{$media-lg-down}
+					height: 23px
+					width: 23px
+					padding: 3px
+				&.active,
+				&:hover
+					span
+						display: inline-block
+						width: 22px
+						height: 22px
+						background: $main-red
+						opacity: 0.4
+						border-radius: 50%
+						@media #{$media-lg-down}
+							height: 17px
+							width: 17px
+	.slider-label
+		text-align: center
+		@media #{$media-xs-down}
+			display: none
+		span
+			background: #be2132
+			color: #fff
+			padding: 35px 68px
+			display: inline-block
+			font-size: 1.8rem
+			font-weight: 700
+			@media #{$media-lg-down}
+				font-size: 1.2rem
+				padding: 18px 38px
+	
+.categories
+	color: #979797
+	.main-list
+		p
+			font-size: 1.2rem
+			font-weight: 700
+			margin-top: 34px
+			text-align: center
+	.cat-item
+		padding: 15px
+		text-align: left
+		margin-bottom: 13px
+		position: relative
+		@media #{$media-xs-down}
+			width: 50% !important
+		@media #{$media-ls-down}
+			width: 100% !important
+		&:hover
+			.cat-list
+				top: 0px
+				opacity: 1
+				transition: opacity .2s, top .2s
+				pointer-events: initial
+				z-index: 10
+			.cat-list-holder
+				&:after
+					opacity: 1
+					bottom: 79px
+					transition: opacity .2s, top .2s
+		&.center
+			.cat-list
+				@media #{$media-xs-up}
+					left: 50%
+					transform: translateX(-50%)
+		&.last
+			.cat-list
+				@media #{$media-xs-up}
+					left: auto
+					right: 0
+		&:nth-child(odd)
+			.cat-list
+				@media #{$media-xs-down}
+					right: auto 
+					left: 0 
+		&:nth-child(even)
+			.cat-list
+				@media #{$media-xs-down}
+					left: auto 
+					right: 0
+				@media #{$media-ls-down}
+					right: auto
+					left: 0
+	.cat-list-holder
+		position: relative
+		&:after
+			content: ''
+			width: 0
+			height: 0
+			border-style: solid
+			border-width: 0 50px 50px 50px
+			border-color: transparent transparent #ffffff transparent
+			position: absolute
+			left: 50%
+			transform: translateX(-50%)
+			z-index: 7
+			opacity: 0
+			transition: opacity .2s, top .2s
+			top: -40px
+	.list-item
+		padding-left: 20px
+		margin-bottom: 20px
+		@media #{$media-ls-down}
+			padding-left: 5px
+		@media #{$media-xs-down}
+			width: 50%
+		h5
+			margin-bottom: 10px
+			color: #7f7f7f
+			text-transform: none
+	.cat-list
+		position: absolute
+		top: 200px
+		background: #fff
+		box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5)
+		z-index: 6
+		padding: 20px
+		width: 611px
+		opacity: 0
+		transition: opacity .2s, top .2s
+		pointer-events: none
+		@media #{$media-xs-down}
+			width: 430px
+		@media #{$media-ls-down}
+			width: 100%
+			padding: 10px
+		p
+			margin-top: 0
+			margin-bottom: 20px
+			color: #e3ae8d
+	.cat-item
+		&:nth-child(1)
+			.image-holder
+				border: solid 2px #e3ae8d
+			.cat-list
+				p
+					color: #e3ae8d
+			.sub-list
+				li
+					&:hover
+						color: #e3ae8d
+		&:nth-child(2)
+			.image-holder
+				border: solid 2px #8d90e3
+			.cat-list
+				p
+					color: #8d90e3
+			.sub-list
+				li
+					&:hover
+						color: #8d90e3
+		&:nth-child(3)
+			.image-holder
+				border: solid 2px #e38d8d
+			.cat-list
+				p
+					color: #e38d8d
+			.sub-list
+				li
+					&:hover
+						color: #e38d8d
+
+		&:nth-child(4)
+			.image-holder
+				border: solid 2px #e38db4
+			.cat-list
+				p
+					color: #e38db4
+			.sub-list
+				li
+					&:hover
+						color: #e38db4
+		&:nth-child(5)
+			.image-holder
+				border: solid 2px #6cca77
+			.cat-list
+				p
+					color: #6cca77
+			.sub-list
+				li
+					&:hover
+						color: #6cca77
+		&:nth-child(6)
+			.image-holder
+				border: solid 2px #5eb9bc
+			.cat-list
+				p
+					color: #5eb9bc
+			.sub-list
+				li
+					&:hover
+						color: #5eb9bc
+		.image-holder
+			height: 200px
+
+		
+
+
+.get-all
+	background: #be2132
+	margin-top: 54px
+	padding-top: 8px
+	padding-bottom: 59px
+	.bordered
+		span
+			background: #be2132
+			color: #fff
+	.mail-input
+		border: 1px solid #9b9b9b
+		position: relative
+		border-radius: 25px
+		padding: 4px 50px
+		max-width: 619px
+		margin: 0 auto
+		background: #fff
+		padding-left: 20px
+		input
+			box-shadow: none
+			border: none
+			background: transparent
+			outline: none
+			width: 100%
+		.search-btn
+			position: absolute
+			top: 2px
+			right: 2px
+			height: 35px
+			line-height: 35px
+			padding: 0 39px
+			background: #be2132
+			&:hover
+				background: #570f17
+			@media #{$media-md-down}
+				height: 28px
+				line-height: 28px
+				padding: 0 11px
+		
+.m-slider
+	@media #{$media-md-down}
+		max-width: 1020px
+		margin: 0 auto
+	@media #{$media-sm-down}
+		max-width: 610px
+	&.colection
+		.text
+			height: 84px
+		.image-holder
+			img
+				transition: transform .2s
+			&:hover
+				img
+					transform: scale(1.1)
+					transition: transform .2s
+	.item
+		padding: 5px
+		text-align: center
+	.image-holder
+		box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5)
+		height: 246px
+		margin-bottom: 22px
+	.text
+		text-align: center
+		height: 56px
+		overflow: hidden
+		font-size: 0.95em
+		margin-bottom: 6px
+	.price,
+	.wait
+		text-align: center
+		font-size: 1.2em
+		font-weight: 600
+		color: #be2132
+		font-family: "Roboto"
+	.wait
+		font-size: 1em
+	.button
+		padding: 0px 20px
+		margin-top: 13px
+		line-height: 37px
+		background: #be2132
+		&:hover
+			background: #570f17
+	.owl-nav
+		position: absolute
+		top: 28%
+		transform: translateY(-50%)
+		width: 100%
+		height: 61px
+		@media #{$media-lg-down}
+			height: 44px
+		.owl-prev,
+		.owl-next
+			position: absolute
+			height: 61px
+			width: 61px
+			background: red
+			border-radius: 50%
+			text-indent: -9999px
+			border: 1px solid #dedede
+			box-shadow: $box-shadow
+			@media #{$media-lg-down}
+				height: 44px
+				width: 44px
+				background-size: 16px !important
+			&.disabled
+				opacity: 0
+				pointer-events: none
+		.owl-prev
+			left: -90px
+			background: url(../img/icons/chevron-left.svg) 43% 50% no-repeat rgba(255, 255, 255, 0.81)
+			@media #{$media-md-down}
+				left: -70px
+		.owl-next
+			right: -90px
+			background: url(../img/icons/chevron-right.svg) 57% 50% no-repeat rgba(255, 255, 255, 0.81)
+			@media #{$media-md-down}
+				right: -70px
+	.owl-dots
+		display: none
+	.label	
+		position: absolute
+		top: 0
+		left: 0
+		z-index: 3
+		background: #be2132
+		padding: 2px 10px
+		color: #fff
+	.goods-slider
+		.item
+			padding: 10px
+		.flip-container
+			height: 246px
+			perspective: 600px
+			margin-bottom: 20px
+			.front
+				position: absolute
+				top: 0
+				left: 0
+				width: 100%
+				transition: transform .4s
+				transform: rotateY(0deg)
+				transform-style: preserve-3d
+				z-index: 2
+				backface-visibility: hidden
+			.back
+				width: 100%
+				height: 246px
+				background: #be2132
+				position: absolute
+				top: 0
+				left: 0
+				transform: rotateY(-180deg)
+				transform-style: preserve-3d
+				transition: transform .4s
+				backface-visibility: hidden
+				color: #fff
+				padding-top: 50px
+				.button
+					font-size: 0.7em
+					padding: 0 47px
+					line-height: 25px
+					margin: 0 10px
+					background: rgba(0, 0, 0, 0.54)
+				.btn-holder
+					margin-top: 20px
+					a
+						text-decoration: underline
+						font-size: 0.8em
+						display: inline-block
+						margin: 0 10px
+				.art
+					position: absolute
+					bottom: 10px
+					left: 50%
+					transform: translateX(-50%)
+					width: 100%
+					font-size: 12px
+				.more
+					text-decoration: underline
+					font-size: 0.8em
+			&:hover
+				.back
+					transform: rotateY(0deg)
+				.front
+					transform: rotateY(180deg)
+					transition: transform .4s
+				
+
+
+
+
+.advantages
+	background: #e8e8e8
+	margin-top: 49px
+	padding-top: 46px
+	text-align: center
+	padding-bottom: 30px
+	li
+		padding: 0 20px
+		margin-bottom: 20px
+		@media #{$media-xs-down}
+			width: 50% !important
+		@media #{$media-ls-down}
+			width: 100% !important
+	.text-holder
+		height: 153px
+		overflow: hidden
+	h6
+		text-transform: none
+		font-size: 1.2em
+		margin-top: 26px
+		margin-bottom: 15px
+		color: $main-red
+	.image-holder
+		width: 138px
+		height: 138px
+		background: #be2132
+		border-radius: 50%
+		margin: 0 auto
+.vendors
+	background: #be2132
+	.item
+		padding: 0
+	.image-holder
+		box-shadow: none
+		height: 160px
+		margin: 0
+		padding: 20px
+		&:hover
+			background: #861824
+		img
+			object-fit: contain
+
+.about-us
+	padding-bottom: 45px
+	h2
+		margin-bottom: 18px
+	p
+		font-size: 0.8em
+		line-height: 1.4em
+		margin-bottom: 16px
+		text-align: justify
+	.text-holder
+		@media #{$media-lg-down}
+			max-width: 770px
+			margin: 0 auto
+
+
+.contact-us
+	padding-top: 10px
+	background: #e8e8e8
+	padding-bottom: 34px
+	.form-holder
+		max-width: 670px
+		margin: 0 auto
+	h2
+		margin-bottom: 40px
+		span
+			background: #e8e8e8
+	input,
+	textarea
+		border: 1px solid #9b9b9b
+		position: relative
+		border-radius: 25px
+		padding: 4px 50px
+		margin: 0 auto
+		background: #fff
+		padding-left: 20px
+		width: 100%
+		margin-bottom: 15px
+	textarea
+		margin-left: 20px
+		resize: none
+		height: 146px
+		@media #{$media-md-down}
+			height: 127px
+		@media #{$media-xs-down}
+			margin: 0
+	.btn-holder
+		text-align: center
+		margin-top: 15px
+	.button
+		padding: 0 39px
+		background: #be2132
+		&:hover
+			background: #570f17
+	.inputs
+		@media #{$media-xs-down}
+			width: 100% !important
+
+.footer
+	background: $main-red
+	padding-top: 47px
+	.foot-nav
+		// @media #{$media-xs-down}
+		// 	display: none
+		position: relative
+		@media #{$media-xs-down}
+			text-align: center
+		&:after
+			content: ''
+			position: absolute
+			top: 0
+			left: 50%
+			transform: translateX(-50%)
+			height: 100%
+			width: 1px
+			background: #fff
+			@media #{$media-ls-down}
+				display: none
+	.logo-holder
+		@media #{$media-xs-down}
+			width: 50%
+			padding-right: 10px
+		@media #{$media-ls-down}
+			padding-right: 0
+			width: 100%
+	.nav-item
+		padding: 0 11px
+		border-right: 1px solid #fff
+		height: 241px
+		position: relative
+		@media #{$media-xs-down}
+			width: 50%
+			border: none
+			padding-bottom: 40px
+			height: auto
+			margin-bottom: 20px
+		@media #{$media-ls-down}
+			width: 100%
+			text-align: center
+		&:last-child
+			border: none
+		h6
+			text-transform: none
+			font-size: 0.9em
+			margin-bottom: 17px
+			color: #fff
+		li
+			line-height: 1.1em
+		a
+			font-size: 0.9em
+			font-family: "Roboto"
+			color: #fff
+			display: inline-block
+			&:hover
+				color: rgb(87, 15, 23)
+		.btn-holder
+			text-align: center
+			margin-top: 30px
+			.button
+				font-family: "RobotoSlab"
+				padding: 0 20px
+				line-height: 2em
+				position: absolute
+				left: 50%
+				transform: translateX(-50%)
+				bottom: 0
+				white-space: nowrap
+				border: 1px solid transparent
+				&:hover
+					background: transparent
+					border: 1px solid rgba(0, 0, 0, 0.54)
+	.phones-list
+		span
+			font-weight: 700
+	.rights
+		border-top: 1px solid #fff
+		margin-top: 13px
+		padding-top: 9px
+		font-size: 0.85em
+		text-align: center
+		color: #fff
+		font-family: "Roboto"
+	.bott-holder
+		border-top: 1px solid #fff
+		margin-top: 29px
+		padding-top: 26px
+		.logo-holder
+			.image-holder
+				max-width: 245px
+				margin: 0 auto
+			span
+				margin-top: 12px
+				display: inline-block
+				font-size: 0.9em
+				color: #fff
+		.big-img
+			height: 214px
+			padding: 0 11px
+			@media #{$media-xs-down}
+				display: none
+			.image-holder
+				background: #d8d8d8
+		.contact-info
+			padding-left: 8px
+			color: #fff
+			font-size: 0.9rem
+			@media #{$media-xs-down}
+				width: 50%
+			@media #{$media-ls-down}
+				width: 100%
+				text-align: center
+				margin-top: 30px
+			.black
+				color: #570f16
+				margin-right: 7px
+			.graf
+				margin-top: 23px
+		.socials-list
+			margin-top: 39px
+			border-top: 1px solid #fff
+			a
+				display: inline-block
+				height: 49px
+				width: 49px
+				background: #e8e8e8
+				border-radius: 6px
+				margin: 4px
+				@media #{$media-md-down}
+					height: 29px
+					width: 29px
+					margin: 2px

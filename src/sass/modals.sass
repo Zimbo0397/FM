@@ -1,0 +1,74 @@
+@import _mixins
+
+// --------------------------------------------------
+// MODALS
+// --------------------------------------------------
+.order-modal
+	padding-top: 30px
+	.mobile-modal
+		margin: 0 auto
+		display: none
+	&.call
+		.order-table
+			display: none
+		.mobile-modal
+			display: block
+.mobile-modal
+	max-width: 600px
+	height: 202px
+	padding-left: 198px
+	padding-top: 20px
+	position: relative
+	border: 1px solid #757575 
+	&.thnks-modal
+		padding: 40px
+		height: auto
+		width: auto
+	.call-icon
+		position: absolute
+		top: 0
+		left: 0
+		height: 100%
+		width: 199px
+		background: $main-red
+		background-size: cover
+		padding: 33px
+		img
+			width: 100%
+	.text-holder
+		padding-left: 35px
+		padding-right: 60px
+		p
+			text-transform: uppercase
+			font-size: 0.8em
+			line-height: 1.4em
+		.field
+			border: 1px solid #929292
+			margin-top: 10px
+			border-radius: 25px
+			margin-bottom: 20px
+		input
+			outline: none
+			margin-top: 11px
+			padding-left: 20px
+			width: 100%
+			margin: 0
+			box-shadow: none
+			border: none
+			font-size: 1em
+			background: transparent
+			&::-webkit-input-placeholder
+				font-size: 0.9em
+			&::-moz-placeholder
+				font-size: 0.9em
+			&:-moz-placeholder
+				font-size: 0.9em
+			&:-ms-input-placeholder
+				font-size: 0.9em
+		.btns
+			text-align: center
+			.button
+				padding: 2px 20px
+				font-size: 0.8em
+				padding: 3px 15px
+				line-height: 1.4em
